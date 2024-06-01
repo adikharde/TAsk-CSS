@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empllo Website</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .l{
+            background-color: rgb(246, 216, 246);
+            /*border-top-left-radius: 20px;*/
+            /*border-top-right-radius: 20px;*/
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            
+            
+        }
+        h2{
+            display: flex;
+           /* justify-content: left;*/
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        h3{
+            display: contents;
+            font-size: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+        }
+        h1{
+            margin: auto;
+            text-align: center;
+            padding-top: 120px;
+        }
+        p{
+            margin: auto;
+            text-align: center;
+            padding: 30px;
+        }
+        nav{
+            position: relative;
+            padding-left: 50px;
+            margin-top: 0%;
+        }
+        nav ul{
+            width: 100%;
+            padding-top: 0px;
+            height: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+
+        }
+        .p{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: blueviolet;
+            padding: 8px;
+            color: white;
+        }
+        .p:hover{
+            background-color: black;
+        }
+        .s{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 8px;
+            background-color: rgb(238, 205, 238);
+            border: 1px solid black ;
+        }
+        .s:hover{
+            background-color: antiquewhite;
+        }
+        .menu{
+            position: relative;
+        }
+        .sb{
+            
+            display: none;
+            position: absolute;
+
+            
+
+        }
+        .sb nav ul{
+            top: 10px;
+            display: flex;
+            flex-direction: column;
+           
+        }
+       
+        nav ul li:hover .sb{
+            display: block;
+            position: absolute;
+            
+        }
+        
+        .a{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 60px;
+            display: flex;
+            
+
+            
+
+        }
+        .a:hover{
+            background-color: whitesmoke;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .b{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 60px; 
+            display: flex;
+        }
+        .b:hover{
+            background-color: whitesmoke;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .c{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 60px; 
+            display: flex;
+        }
+        .c:hover{
+            background-color: whitesmoke;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .d{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 60px; 
+            display: flex;
+        }
+        .d:hover{
+            background-color: whitesmoke;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .h{
+            display: flex;
+            gap: 10%;
+            background-color: white;
+        }
+        .q{
+            text-align: center;
+            height: 50px;
+            width: 90px;
+            color: white;
+            background-color: violet;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .q:hover{
+            background-color: black;
+        }
+        .w{
+            height: 50px;
+            width: 90px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .w:hover{
+            background-color: violet;
+        }
+        .e{
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            
+        }
+        .r{
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            padding-top: 10px;
+            gap: 20px;
+        }
+        .z{
+            height: 60px;
+            width: 90%;
+            background-color: red;
+            margin: auto;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+
+        }
+        .v{
+            height: 60px;
+            width: 90%;
+            background-color: red;
+            margin: auto;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+
+        }
+         .x{
+            height: 60px;
+            width: 90%;
+            background-color: red;
+            margin: auto;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+         }                
+                                                              
+    </style>
+</head>
+<body>
+    <div class="l">
+        <h2><span>empllo</span> </h2>
+        <h3><span>formally try remotly</span></h3>
+    
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li >find a job  
+                        
+                            <nav>
+                               <div class="sb">
+                                <ul>
+                                    <li>Engineering</li>
+                                    <li>Design </li>
+                                    <li>Management </li>
+                                    <li>Finance</li>
+                                    <li>Sales</li>
+                                </ul>
+                               </div>
+                            </nav>
+                        
+                    </li>
+                    <li>Find a company</li>
+                    <li>Resources</li>
+                    <li class="p">Post a Job</li>
+                    <li class="s">Sign up</li>
+                
+                </ul>
+            </div>
+        
+        </nav>
+        <h1>Where you Find Top Tech Job</h1>
+        <p> Browse <b>13,222</b> jobs from <b>15,363</b> companies.</p>
+        <div class="e">
+            <h2 class="q">Post a job</h2>
+            <h2 class="w"> Find a job </h2>
+        </div>
+            
+        
+    </div>
+    <div class="h">
+        <div class="a"> Cloud flare</div>
+        <div class="b"> Crypto</div>
+        <div class="c"> Fananstic</div>
+        <div class="d"> Grammely</div>
+    </div>
+
+    <div class="r">
+        <div class="z"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deleniti.</div>
+        <div class="x"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deleniti.</div>
+        <div class="v"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deleniti.</div>
+    </div>
+        
+
+</body>
+</html>
