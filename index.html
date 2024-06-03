@@ -41,7 +41,7 @@
         }
         nav{
             position: relative;
-            padding-left: 50px;
+            /* padding-left: 50px; */
             margin-top: 0%;
         }
         nav ul{
@@ -80,28 +80,52 @@
         }
         .menu{
             position: relative;
-        }
-        .sb{
             
-            display: none;
+        }
+        .sbmenu{
             position: absolute;
-
+            display: none;
             
-
         }
-        .sb nav ul{
-            top: 10px;
-            display: flex;
-            flex-direction: column;
+        .sbmenu nav ul li{
+            top: 50px;
+            margin-top: 10px;
            
         }
-       
-        nav ul li:hover .sb{
+        .sbmenu nav ul{
+            flex-direction: column;
+            height: fit-content;
+            /* display: flex; */
+            height: 200px;
+            width: 100px;
+            background-color: antiquewhite;
+
+        }
+       .menu ul   :hover .sbmenu  {
             display: block;
-            position: absolute;
+            
             
         }
-        
+        .sbmenu-1{
+            position: absolute;
+            display: none;
+        }
+        .sbmenu-1 ul li{
+           
+            top: 10px;
+        }
+        .sbmenu-1 ul{
+            flex-direction: column;
+            height: fit-content;
+            height: 100px;
+            width: 120px;
+            background-color: whitesmoke;
+
+        }
+        .menu ul :hover .sbmenu-1{
+            display: block;
+        }
+
         .a{
             height: 100px;
             width: 100px;
@@ -229,7 +253,7 @@
         .z{
             height: 60px;
             width: 90%;
-            background-color: red;
+            background-color: rgb(233, 210, 233);
             margin: auto;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
@@ -241,7 +265,7 @@
         .v{
             height: 60px;
             width: 90%;
-            background-color: red;
+            background-color:  rgb(233, 210, 233);
             margin: auto;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
@@ -253,7 +277,7 @@
          .x{
             height: 60px;
             width: 90%;
-            background-color: red;
+            background-color:  rgb(233, 210, 233);
             margin: auto;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
@@ -274,20 +298,31 @@
                 <ul>
                     <li >find a job  
                         
-                            <nav>
-                               <div class="sb">
-                                <ul>
-                                    <li>Engineering</li>
-                                    <li>Design </li>
-                                    <li>Management </li>
-                                    <li>Finance</li>
-                                    <li>Sales</li>
-                                </ul>
+                            
+                               <div class="sbmenu">
+                                <nav>
+                                    <ul>
+                                        <li class="#">Engineering</li>
+                                        <li class="#">Design </li>
+                                        <li class="#">Management </li>
+                                        <li class="#">Finance</li>
+                                        <li class="#">Sales</li>
+                                    </ul>
+                                </nav>
                                </div>
-                            </nav>
+                            
                         
                     </li>
-                    <li>Find a company</li>
+                    <li>Find a company
+                        <div class="sbmenu-1">
+                            <ul>
+                                <li>Browse Company</li>
+                                <li> About </li>
+                                <li> CEO of COmpany</li>
+                            </ul>
+
+                        </div>
+                    </li>
                     <li>Resources</li>
                     <li class="p">Post a Job</li>
                     <li class="s">Sign up</li>
